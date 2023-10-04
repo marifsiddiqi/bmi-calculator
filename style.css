@@ -1,32 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: white;
+    /* background-color: white; */
+}
+
+/* Remove Arrow on Input number type */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 body {
-    width: 100%;
-    height: 100vh;
+    /* width: 100%;
+    height: 100vh; */
+    font-family: 'Roboto', sans-serif;
+    background-image: url('src/bmi.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Untuk mencegah gambar bergeser saat digulir */
+    background-position: center center; /* Menempatkan gambar di tengah-tengah */
+    background-color: rgba(253,250,215);
+    overflow-y: hidden; /* Untuk mencegah pengguliran */
+    height: 100vh; /* Untuk mengisi seluruh tinggi layar */
 }
 
-main{
+main {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    background-color: rgb(101, 101, 179);
+    /* background-color: rgb(101, 101, 179); */
 }
 
 section {
-    width: 900px;
+    width: fit-content;
+    height: 400px;
+    padding-right: 24px;
+    padding-left: 24px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: white;
+    /* border: 2px solid rgba(216, 222, 227); */
+    border-radius: 6px;
+    box-shadow: blue 0px 0px 0px 2.5px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
 }
 
-span{
-    font-weight: bold;
+img {
+    /* width: 200px;
+    margin-bottom: 16px; */
+    width: 100vw;
+    height: 100vh;
+}
+
+h1 {
+    color: rgba(41, 56, 69);
+    margin-bottom: 16px;
+}
+
+h3 {
+    color: rgba(41, 56, 69);
+    margin-bottom: 32px;
+}
+
+.form {
+    width: 100%;
+    color: rgba(41, 56, 69);
+    margin-bottom: 16px;
+}
+
+.input-berat,
+.input-tinggi {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 28px;
+}
+
+label {
+    margin-bottom: 12px;
+    font-size: medium;
+    font-weight: 500;
+}
+
+input {
+    width: 100%;
+    height: 32px;
+    border: 2px solid rgba(216, 222, 227);
+    border-radius: 5px;
+    padding-left: 9px;
+    padding-right: 9px;
+}
+
+button {
+    background-color: rgba(101, 88, 245);
+    color: white;
+    padding: 9px 12px;
+    border: none;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: small;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: rgb(88, 73, 247);
+}
+
+p{
+    font-weight: 500;
+}
+
+span {
+    font-weight: bolder;
 }

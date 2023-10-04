@@ -29,8 +29,8 @@ function submit() {
     return result
 }
 
-const button = document.querySelector('#submit')
-button.addEventListener('click', function (event) {
+const button = document.querySelector('.form')
+button.addEventListener('submit', function (event) {
     event.preventDefault()
     const hasil = document.querySelector('#hasil')
     hasil.innerHTML = `<p>Your BMI is <span id="bmi">${submit().bmi}</span> which means You are <span id="kategori">${submit().kategori}</span></p>`
